@@ -1,0 +1,151 @@
+
+.formBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+    h1 {
+        margin: 0px;
+        padding: 0 0 20px;
+        text-align: center;
+        color: #262626;
+    }
+
+    input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        font-size: 16px;
+        width: 100%;
+        background-color: rgba(26, 126, 207, 1);
+        color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    a,
+    p {
+        color: #262626;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    a {
+        color: rgba(26, 126, 207, 1);
+    }
+
+    .btn-show{
+        position: absolute;
+        right: 2px;
+        top: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+    
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(26, 126, 207, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+
+    svg {
+        font-size: 45px;
+        color: #ffffff;
+    }
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 25px;
+
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #262626;
+        outline: none;
+        height: 40px;
+        color: #262626;
+        background: transparent;
+        font-size: 16px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        transition: .4s;
+
+        &:focus {
+            border-bottom: 2px solid rgba(26, 126, 207, 1);
+            transition: .4s;
+
+            &+span {
+                color: rgba(26, 126, 207, 1);
+                transition: .4s;
+            }
+        }       
+    }
+
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #262626;
+        outline: none;
+        height: 40px;
+        color: #262626;
+        background: transparent;
+        font-size: 16px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        transition: .4s;
+
+        &:focus {
+            border-bottom: 2px solid rgba(26, 126, 207, 1);
+            transition: .4s;
+
+            &+span {
+                color: rgba(26, 126, 207, 1);
+                transition: .4s;
+            }
+        } 
+    }     
+
+    .is-invalid {
+        border-bottom: 2px solid red !important;
+        transition: .4s;
+    }
+    
+    .invalid-feedback {
+        color: #ff4545;
+        font-size: 80%;
+        margin-top: .25rem;
+        text-align: start;
+    }
+
+    span {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        transition: .4s;
+    }
+}
+
